@@ -34,7 +34,7 @@ header {
   background-color: rgb(65, 65, 66);
   color: aliceblue;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 

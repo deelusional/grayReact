@@ -7,11 +7,16 @@ const Content = () => {
     return names[int];
   }
   
+  const handleClick = () => { 
+    console.log('You clicked it!');
+  }
+
   return (
     <main>
       <p>
         This is the content component { handleNameChange()  }!
       </p>
+      <button onClick={ handleClick() }>Click here</button>
     </main>
   )
 }
