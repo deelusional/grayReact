@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <h1>
-        Grocery List
+        Grocery List (Header Componenet)
       </h1>
     </header>
   )
