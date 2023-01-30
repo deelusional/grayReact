@@ -7,23 +7,19 @@ const Content = () => {
   const [count, setCount] = useState(0);
 
   const handleNameChange = () => {
-    const names = ['Asshat', 'Dickhead', 'Fucktard'];
+    const names = ['Asshat', 'Dickhead', 'Fucktard', 'Hastin Student', 'Idiot'];
     const int = Math.floor(Math.random() * 3);
     setName(names[int]);
   }
 
   const handleClick = () => { 
     setCount(count + 1);
+    setCount(count + 1);
     console.log(count);
   }
   
-  const handleClick2 = (name) => { 
-    console.log(`${name} was clicked!`);
-  }
-  
-  const handleClick3 = (e) => { 
-    // to get the event target
-    console.log(e.target.innerText);
+  const handleClick2 = () => { 
+    console.log(count);
   }
 
   return (
@@ -31,15 +27,10 @@ const Content = () => {
       <p onDoubleClick={handleClick}>
         {/* to use React useState (below) */}
         Hello {name}!
-
-        {/* Below was using the vanilla js way */}
-        {/* Hello {handleNameChange()}! */}
       </p>
       <button onClick={handleNameChange}>Change Name</button>
       <button onClick={handleClick}>Click It</button>
-      {/* Anonymous function below */}
-      {/* <button onClick={() =>  handleClick2('Asshat')  }>Click here</button> */}
-      <button onClick={(e) =>  handleClick3(e)  }>Click here</button>
+      <button onClick={handleClick2}>Click here</button>
     </main>
   )
 }
