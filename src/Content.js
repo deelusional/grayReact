@@ -14,7 +14,8 @@ const Content = () => {
     console.log('You clicked it!');
   }
   const handleClick3 = (e) => { 
-    console.log(e);
+    // to get the event target
+    console.log(e.target);
   }
 
   return (
