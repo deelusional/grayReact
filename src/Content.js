@@ -15,13 +15,13 @@ const Content = () => {
   }
   const handleClick3 = (e) => { 
     // to get the event target
-    console.log(e.target);
+    console.log(e.target.innerText);
   }
 
   return (
     <main>
-      <p>
-        This is the content component { handleNameChange()  }!
+      <p onDoubleClick={handleClick}>
+        Hello {handleNameChange()}!
       </p>
       <button onClick={handleClick}>Click here</button>
       {/* Anonymous function below */}
